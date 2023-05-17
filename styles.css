@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(229, 242, 254);
+}
+
+.section-center {
+    padding: 4rem 1.5rem;
+}
+
+.gift-img img {
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(30, 169, 200);
+    margin-bottom: .5rem;
+}
+
+.giveaway {
+    text-transform: capitalize;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.gift-info p {
+    color: rgb(87, 86, 86);
+    margin-bottom: 2rem;
+}
+
+.deadline {
+    display: flex;
+    gap: 1rem;
+}
+
+.deadline-format {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(38, 49, 64);
+    border-radius: 5px;
+}
+
+.deadline-format h4 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.deadline-format span {
+    text-transform: uppercase;
+    color: rgb(225, 245, 255);
+    font-size: .75rem;
+    letter-spacing: 2px;
+}
+
+.expired {
+    text-transform: capitalize;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    color: rgb(170, 40, 40);
+}
+
+/* media queries */
+@media screen and (min-width:768px) {
+    .section-center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .gift-img img {
+        margin-bottom: 0;
+    }
+}
